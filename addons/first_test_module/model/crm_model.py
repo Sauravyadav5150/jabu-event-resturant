@@ -1,15 +1,17 @@
 
 from odoo import api, fields, models
 
-var = "asd"
+var = "asd"# variable 
 def check_functon():
     pass
 class CrmLead(models.Model):
     _inherit = "crm.lead" # inherit_ means model already exits
-    #_name ='crm.lead' # thisis name of the obkect
+    #_name ='crm.lead' # thisis name of the obkect/table 
+    test_at = ";asdasd" #property 
     test_data =  fields.Char(
         string="Test Data y", 
-        readonly=True)
+        readonly=True) # colimn on the table crm.lead with name test_data 
+                       #, field.Char means feild of type character
     test_module =  fields.Char(
         string="Test Data y")
     event_types= fields.Many2one(
@@ -27,6 +29,9 @@ class CrmLead(models.Model):
     email_date= fields.Many2many(
     comodel_name="email.date",
     string="email date")
+
+    indoor_outdoor =  fields.selection([('indoor','In Door'),('outdoor','Out Door')],
+        string="indoor outdoor selection" ) 
 
 
 
@@ -63,7 +68,7 @@ jump this ,
 ob_plan2 = new plane();
 
 function vs method
-varriab;e vs propertiers 
+varriab;e vs propertiers/field
 
 
 

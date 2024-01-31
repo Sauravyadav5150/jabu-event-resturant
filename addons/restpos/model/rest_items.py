@@ -4,11 +4,12 @@ from odoo import api, fields, models
 var = "asd"
 def check_functon():
     pass
-class ordertable(models.Model):
-    _name ='order.table' 
+class restitems(models.Model):
+    _name ='rest.items' 
     name =  fields.Char(
-        string="order table" ) 
-    
+        string="Name of Item" )  
+    price=fields.float(
+        string="item price")
 
     def check_method(self):
         pass
