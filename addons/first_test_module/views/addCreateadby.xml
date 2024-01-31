@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="crm_case_tree_view_oppor_withCreatedby" model="ir.ui.view">
+            <field name="name">crm.lead.tree.opportunity_varun</field>
+            <field name="model">crm.lead</field>
+            <field name="priority">1</field>
+            <field name="inherit_id" ref="crm.crm_case_tree_view_oppor" />
+            <field name="arch" type="xml">
+                <field name="contact_name" position="before">
+                          <field name="create_uid" />
+                          <field name="test_module"/>
+                          <field name="event_types"/>
+                          <field name="event_venues"/>
+                          
+                </field> 
+            </field>
+        </record>
+        <record id="crm_case_form_view_oppor_withCreatedby" model="ir.ui.view">
+            <field name="name">crm.lead.form.opportunity_varun</field>
+            <field name="model">crm.lead</field>
+            <field name="priority">1</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form" />
+            <field name="arch" type="xml">
+
+                <field name="tag_ids" position="after">
+
+                          <field name="test_module"/>
+                          <field name="event_types"/>
+                          <field name="event_venues"/>
+                            </field>
+            </field>
+        </record>
+
+
+        <record id="crm_case_form_eventTypes" model="ir.ui.view">
+            <field name="name">event.types.form</field>
+            <field name="model">event.types</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form>
+        <field name="name"/>
+        </form>
+               
+            </field>
+        </record>
+
+        
+        <record id="crm_case_form_eventvenues" model="ir.ui.view">
+            <field name="name">event.venues.form</field>
+            <field name="model">event.venues</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form>
+        <field name="name"/>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="crm_case_form_emaildate" model="ir.ui.view">
+            <field name="name">email.date.form</field>
+            <field name="model">email.date</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form>
+        <field name="name"/>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="crm_case_form_totalpeople" model="ir.ui.view">
+            <field name="name">total.people.form</field>
+            <field name="model">total.people</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form>
+        <field name="name"/>
+        </form>
+               
+            </field>
+        </record>
+        </odoo>
+        

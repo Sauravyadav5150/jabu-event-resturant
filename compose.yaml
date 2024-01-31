@@ -1,0 +1,32 @@
+version: '3.1'
+services:
+  web:
+    image: odoo:16.0
+
+    ports:
+      - "8069:8069"       
+    volumes:
+      - ./addons/:/mnt/extra-addons
+    environment:
+    - WAIT_HOSTS=mydb:5432
+    - WAIT_HOSTS_TIMEOUT=300
+    - WAIT_SLEEP_INTERVAL=30
+    - WAIT_HOST_CONNECT_TIMEOUT=30
+    - HOST=mydb
+    - USER=odoo
+    - PASSWORD=myodoo
+    
+  mydb:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo  -d postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 7
+    volumes:
+      - ./odoo-db:/var/lib/postgresql/data
+      
