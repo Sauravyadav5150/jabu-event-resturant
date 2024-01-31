@@ -9,10 +9,16 @@ class restpayment(models.Model):
     name =  fields.int(
         string="rest payment" ) 
       
-    item_price=fields.float(
-        string="item price")
-
+    total_paid=fields.float(
+        string="total paid")
     
+    date_and_time=fields.datetime.now(
+        string="date and time")
+    
+    order_id = fields.Many2one(
+    comodel_name="order.table",
+    string="order id")
+
 
     def check_method(self):
         pass
