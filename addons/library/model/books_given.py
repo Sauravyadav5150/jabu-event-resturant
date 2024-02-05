@@ -14,28 +14,26 @@ class booksgiven(models.Model):
 
     name=fields.char(
         string="books given")
-    # name has to be explicitly created , with char , this field may not be needed for all tables 
+  
    
     issue_date=  fields.date(
         string="issue date" ) # create colimn 'issue date' 
                        #feild of type date  feild of type selection field.int means 
                        #  on the table order.details with
-                       # with  Label 'books given'
-    # there is no need to create Id fields in odoo , since every model creates 5 fields by default 
-    # ID , created_by,created_At,updated_by,updated_at
-    
+                       # with  Label 'issue date'
+   
     
     return_date =  fields.date(
         string="return date" )  # create colimn 'return_date' 
                        #feild of type  date  feild of type date field.date means 
                        #  on the table books.given with
-                       # with  Label "books given"
+                       # with  Label "return date"
 
     penalty=  fields.float(
         string="penalty" )  # create colimn 'penalty' 
                        #feild of type  float  feild of type float field.float means 
                        #  on the table books.given with
-                       # with  Label "books given"
+                       # with  Label "penalty"
 
      
     
@@ -43,11 +41,23 @@ class booksgiven(models.Model):
 book_id = fields.Many2one(
     comodel_name="library.books",
     string="book id")
+                    # create colimn 'book_id' 
+                    # feild of type  Many2one  feild of type FK field.Many2One means 
+                    #  on the table books.given with
+                    # with  Label "book id"
+                    # connect to id column of table  "library.books"--  comodel_name="library.books"
+                    # book_id to id of library books
+ 
 
 
 member_id = fields.Many2one(
     comodel_name="library.members",
     string="member id")
-
+                    # create colimn 'member_id' 
+                    # feild of type  Many2one  feild of type FK field.Many2One means 
+                    #  on the table books.given with
+                    # with  Label "member id"
+                    # connect to id column of table  "library.member"--  comodel_name="library.member"
+                    # member_id to id of library members
 def check_method(self):
         pass
