@@ -33,7 +33,7 @@ class librarybooks(models.Model):
                        #  on the table library.books with
                        # with  "year published"
 
-    id= fields.int(
+    total_copies= fields.int(
         string="total copies" ) # create colimn 'total_copies' 
                        #feild of type  int  feild of type int field.int means 
                        #  on the table library.books with
