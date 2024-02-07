@@ -48,7 +48,7 @@ class booksgiven(models.Model):
 
     book_id = fields.Many2one(
     comodel_name="library.books",
-    string="book id")
+    string="Book")
                     # create colimn 'book_id' 
                     # feild of type  Many2one  feild of type FK field.Many2One means 
                     #  on the table books.given with
