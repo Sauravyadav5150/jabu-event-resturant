@@ -14,7 +14,7 @@ class orderdetails(models.Model):
     # when you have only _inherit means change existing table using this class 
 
                     
-    name =  fields.char(
+    name =  fields.Char(
         string="order details" ) 
     # name has to be explicitly created , with char , this field may not be needed for all tables 
     id= fields.Integer(

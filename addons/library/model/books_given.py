@@ -12,7 +12,7 @@ class booksgiven(models.Model):
     # when _inherit!= _name  means take columns from _inherit table and create new table with _name as name
     # when you have only _inherit means change existing table using this class 
 
-    name=fields.char(
+    name=fields.Char(
         string="books given") # create table "order_details" and connect to model order.details
     # this is name of the model  , and when you replace . with _ it becomes table name  
     # when its _name only , means create a new table , or change it 
@@ -21,23 +21,23 @@ class booksgiven(models.Model):
     # when _inherit!= _name  means take columns from _inherit table and create new table with _name as name
     # when you have only _inherit means change existing table using this class 
 
-    name=fields.char
+    name=fields.Char
   
    
-    issue_date=  fields.date(
+    issue_date=  fields.Date(
         string="issue date" ) # create colimn 'issue date' 
                        #feild of type date  feild of type selection field.int means 
                        #  on the table order.details with
                        # with  Label 'issue date'
    
     
-    return_date =  fields.date(
+    return_date =  fields.Date(
         string="return date" )  # create colimn 'return_date' 
                        #feild of type  date  feild of type date field.date means 
                        #  on the table books.given with
                        # with  Label "return date"
 
-    penalty=  fields.float(
+    penalty=  fields.Float(
         string="penalty" )  # create colimn 'penalty' 
                        #feild of type  float  feild of type float field.float means 
                        #  on the table books.given with
