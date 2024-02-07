@@ -68,7 +68,7 @@
          </sheet>
         </form>
                
-            </field>
+        </field>
         </record>
         
         <record id="library_books_given_searc_view" model="ir.ui.view">
