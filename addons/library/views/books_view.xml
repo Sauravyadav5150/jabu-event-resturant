@@ -35,6 +35,7 @@
                
             </field>
         </record>
+
 <record id="library_books_given_form_view" model="ir.ui.view">
             <field name="name">library.books.given.form</field>
             <field name="model">books.given</field>
@@ -44,37 +45,8 @@
              <sheet>
              <group>
         <field name="book_id"/> 
-             </group>
-         </sheet>
-        </form>
-               
-            </field>
-        </record>
-<record id="library_books_given_form_view" model="ir.ui.view">
-            <field name="name">library.books.given.form</field>
-            <field name="model">books.given</field>
-            <field name="priority">1</field> 
-            <field name="arch" type="xml">
-        <form string="Book Form">
-             <sheet>
-             <group>
         <field name="member_id"/> 
-             </group>
-         </sheet>
-        </form>
-               
-            </field>
-        </record>
- <record id="library_books_given_form_view" model="ir.ui.view">
-            <field name="name">library.books.given.form</field>
-            <field name="model">library.books.given</field>
-            <field name="priority">1</field> 
-            <field name="arch" type="xml">
-        <form string="Given Form">
-             <sheet>
-             <group>
-        <field name="name"/>
-          <field name="issue_date"/>
+        <field name="issue_date"/>
          <field name="return_date"/>
          <field name="penalty"/>
              </group>
@@ -83,6 +55,7 @@
                
             </field>
         </record>
+        
         <record id="library_books_given_searc_view" model="ir.ui.view">
             <field name="name">library.books.given.search</field>
             <field name="model">library.books.given</field>
@@ -90,10 +63,12 @@
             <field name="arch" type="xml">
         <tree string="givens Tree"> 
         
-        <field name="name"/>
-         <field name="issue_date"/>
+       <field name="book_id"/> 
+        <field name="member_id"/> 
+        <field name="issue_date"/>
          <field name="return_date"/>
-         <field name="penalty"/> 
+         <field name="penalty"/>
+             </group>
         </tree>
                
             </field>
@@ -118,7 +93,7 @@
             </field>
         </record>
         
-          <record id="library_members_searc_view" model="ir.ui.view">
+        <record id="library_members_searc_view" model="ir.ui.view">
             <field name="name">library.members.search</field>
             <field name="model">library.members</field>
             <field name="priority">1</field> 
