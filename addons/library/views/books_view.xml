@@ -46,9 +46,24 @@
              <group>
         <field name="book_id"/> 
         <field name="member_id"/> 
-        <field name="issue_date"/>
-        <field name="return_date"/>
-        <field name="penalty"/>
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+ <record id="library_books_given_form_view" model="ir.ui.view">
+            <field name="name">library.books.given.form</field>
+            <field name="model">library.books.given</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Given Form">
+             <sheet>
+             <group>
+        <field name="name"/>
+          <field name="issue_date"/>
+         <field name="return_date"/>
+         <field name="penalty"/>
              </group>
          </sheet>
         </form>
