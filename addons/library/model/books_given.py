@@ -21,7 +21,6 @@ class booksgiven(models.Model):
     # when _inherit!= _name  means take columns from _inherit table and create new table with _name as name
     # when you have only _inherit means change existing table using this class 
 
-    name=fields.Char
   
    
     issue_date=  fields.Date(

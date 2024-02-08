@@ -10,7 +10,7 @@
      <field name="res_model"   >library.books</field>
      <field name="view_mode"   >tree,form</field>
      <field name="context">{}</field>
-     <field name="view_id" ref="library_books_form_view"/>  
+     <field name="view_id" ref="library_books_searc_view"/>  
      <field name="search_view_id" ref="library_books_searc_view"/>
 </record>
 <record id="library_books" model="ir.ui.menu">
@@ -26,7 +26,7 @@
      <field name="res_model"   >books.given</field>
      <field name="view_mode"   >tree,form</field>
      <field name="context">{}</field>
-     <field name="view_id" ref="library_books_given_form_view"/>  
+     <field name="view_id" ref="library_books_given_searc_view"/>  
 </record>
 
 <record id="library_books_given" model="ir.ui.menu">
@@ -34,6 +34,22 @@
    <field name="sequence">10</field> 
     <field name="parent_id" ref="library_main_menu"></field>   
     <field name="action" ref="book_given_list" />
+</record>
+
+<record id="book_member_list" model="ir.actions.act_window">
+  <field name="name">Members Window</field>   
+    <field name="type"   >ir.actions.act_window</field>
+     <field name="res_model"   >library.members</field>
+     <field name="view_mode"   >tree,form</field>
+     <field name="context">{}</field>
+     <field name="view_id" ref="library_members_searc_view"/>  
+</record>
+
+<record id="library_members_action" model="ir.ui.menu">
+  <field name="name">Members</field>   
+   <field name="sequence">9</field> 
+    <field name="parent_id" ref="library_main_menu"></field>   
+    <field name="action" ref="book_member_list" />
 </record>
 
 

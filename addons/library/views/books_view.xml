@@ -26,14 +26,13 @@
             <field name="model">library.books</field>
             <field name="priority">1</field> 
             <field name="arch" type="xml">
-        <tree string="Books Tree"> 
-        
-        <field name="name"/>
-        <field name="title"/>
-         <field name="author"/>
-         <field name="edition"/> 
-        </tree>
-               
+                <tree string="Books Tree"> 
+                
+                    <field name="name"/>
+                    <field name="title"/>
+                    <field name="author"/>
+                    <field name="edition"/> 
+                </tree>      
             </field>
         </record>
         <record id="library_books_given_form_view" model="ir.ui.view">
@@ -61,18 +60,13 @@
             <field name="model">books.given</field>
             <field name="priority">1</field> 
             <field name="arch" type="xml">
-        <tree string="givens Tree"> 
-             <group>
-        
-        <field name="book_id"/> 
-        <field name="member_id"/> 
-        <field name="issue_date"/>
-        <field name="return_date"/>
-        <field name="penalty"/>
-             </group>
-             
-        </tree>
-               
+                    <tree string="givens Tree">  
+                            <field name="book_id"/> 
+                            <field name="member_id"/> 
+                            <field name="issue_date"/>
+                            <field name="return_date"/>
+                            <field name="penalty"/>                        
+                    </tree>
             </field>
         </record>    
 
@@ -84,8 +78,8 @@
         <form string="Member Form">
              <sheet>
              <group>
-        <field name="name"/>
-          <field name="member_id"/>
+        <field name="name"/> 
+        <field name="member_name"/> 
          <field name="contact_no"/>
          <field name="address"/>
              </group>
@@ -100,14 +94,12 @@
             <field name="model">library.members</field>
             <field name="priority">1</field> 
             <field name="arch" type="xml">
-        <tree string="Members Tree"> 
-        
-        <field name="name"/>
-          <field name="member_id"/>
-         <field name="contact_no"/>
-         <field name="address"/>
-        </tree>
-               
+                <tree string="Members Tree"> 
+                    <field name="name"/>
+                    <field name="member_name"/>
+                    <field name="contact_no"/>
+                    <field name="address"/>
+                </tree>
             </field>
         </record>
     
