@@ -62,7 +62,6 @@
             <field name="priority">1</field> 
             <field name="arch" type="xml">
         <tree string="givens Tree"> 
-             <sheet>
              <group>
         
         <field name="book_id"/> 
@@ -71,7 +70,7 @@
         <field name="return_date"/>
         <field name="penalty"/>
              </group>
-             </sheet>
+             
         </tree>
                
             </field>
