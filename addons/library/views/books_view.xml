@@ -36,12 +36,12 @@
                
             </field>
         </record>
-<record id="library_books_given_form_view" model="ir.ui.view">
+        <record id="library_books_given_form_view" model="ir.ui.view">
             <field name="name">library.books.given.form</field>
             <field name="model">books.given</field>
             <field name="priority">1</field> 
             <field name="arch" type="xml">
-        <form string="Book Form">
+             <form string="given Form">
              <sheet>
              <group>
         <field name="book_id"/> 
@@ -61,7 +61,7 @@
             <field name="model">books.given</field>
             <field name="priority">1</field> 
             <field name="arch" type="xml">
-        <tree string="Books Tree"> 
+        <tree string="givens Tree"> 
              <sheet>
              <group>
         
