@@ -8,3 +8,5 @@
     #  'data': [  "views/addCreateadby.xml"  ], #usuall some kind of master data  , views and so on 
     'depends': ['base']  #''' modules which will get installed before this  one '''
 }
+
+
