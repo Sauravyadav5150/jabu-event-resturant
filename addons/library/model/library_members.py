@@ -30,3 +30,4 @@ class librarymembers(models.Model):
 def check_method(self):
      pass
 
+#the above module works properly
