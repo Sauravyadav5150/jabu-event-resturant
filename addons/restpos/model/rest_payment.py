@@ -10,8 +10,8 @@ class restpayment(models.Model):
     total_paid=fields.Float(
         string="total paid")
     
-    date_and_time=fields.datetime.now(
-        string="date and time")
+    order_date=fields.Date(
+        string="order date")
     
     details_id = fields.One2many(
     comodel_name="order.details",
