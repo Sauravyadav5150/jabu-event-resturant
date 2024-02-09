@@ -40,7 +40,7 @@ class orderdetails(models.Model):
     item_id=fields.Many2one(
     comodel_name="rest.items",
     string="item id")
-                    # create colimn 'item_id' 
+                    # create colimn 'item_id'  
                     # feild of type  One2Many  feild of type FK field.One2Many means 
                     #  on the table order.details with
                     # with  Label "item id"
