@@ -111,7 +111,7 @@
              <sheet>
              <group>
         <field name="id"/>
-          <field name="details_id"/>
+          <field name="order_id"/>
          <field name="total_paid"/>
          <field name="order_date"/> 
          </sheet>
@@ -128,7 +128,7 @@
                 <tree string="Payments Tree"> 
                 
            <field name="id"/>
-          <field name="details_id"/>
+          <field name="order_id"/>
          <field name="total_paid"/>
          <field name="order_date"/> 
          </sheet>
