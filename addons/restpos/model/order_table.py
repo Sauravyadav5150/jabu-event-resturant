@@ -23,4 +23,4 @@ class ordertable(models.Model):
     def check_method(self):
         pass
 
-        done
+        #done changes
