@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="rest_items_form_view" model="ir.ui.view">
+            <field name="name">rest.items.form</field>
+            <field name="model">rest.items</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Item Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+          <field name="item_name"/>
+         <field name="price"/>
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+         <record id="rest_items_searc_view" model="ir.ui.view">
+            <field name="name">rest.items.search</field>
+            <field name="model">rest.items</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="items Tree"> 
+                
+            <field name="id"/>
+          <field name="item_name"/>
+         <field name="price"/>
+                </tree>      
+            </field>
+        </record>
+
+        <record id="order_table_form_view" model="ir.ui.view">
+            <field name="name">order.table.form</field>
+            <field name="model">order.table</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Table Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+          <field name="created_at"/>
+         <field name="total_amount"/>
+         <field name="status"/>
+         <field name="order_no"/>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+         <record id="order_table__searc_view" model="ir.ui.view">
+            <field name="name">order.table.search</field>
+            <field name="model">order.table</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="Tables Tree"> 
+                
+            <field name="id"/>
+          <field name="created_at"/>
+         <field name="total_amount"/>
+         <field name="status"/>
+         <field name="order_no"/>
+                </tree>      
+            </field>
+        </record>
+
+          <record id="order_details_form_view" model="ir.ui.view">
+            <field name="name">order.details.form</field>
+            <field name="model">order.details</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Detail Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+          <field name="order_id"/>
+         <field name="item_id"/>
+         <field name="quantity"/>
+         <field name="item_price"/>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="order_details_searc_view" model="ir.ui.view">
+            <field name="name">order.details.search</field>
+            <field name="model">order.details</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="Details Tree"> 
+                
+            <field name="id"/>
+          <field name="order_id"/>
+         <field name="item_id"/>
+         <field name="quantity"/>
+         <field name="item_price"/>
+         </sheet>
+            </field>
+        </record>
+
+        <record id="rest_payment_form_view" model="ir.ui.view">
+            <field name="name">rest.payment.form</field>
+            <field name="model">rest.payment</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Payment Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+          <field name="details_id"/>
+         <field name="total_paid"/>
+         <field name="order_date"/> 
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="rest_payment_searc_view" model="ir.ui.view">
+            <field name="name">rest.payment.search</field>
+            <field name="model">rest.payment</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="Payments Tree"> 
+                
+           <field name="id"/>
+          <field name="details_id"/>
+         <field name="total_paid"/>
+         <field name="order_date"/> 
+         </sheet>
+            </field>
+        </record>
