@@ -14,29 +14,13 @@ class orderdetails(models.Model):
     # when you have only _inherit means change existing table using this class 
 
                     
-    name =  fields.Char(
-        string="order details" ) 
-    # name has to be explicitly created , with char , this field may not be needed for all tables 
-    id= fields.Integer(
-        string="id" ) 
-                       # create colimn 'id' 
-                       #feild of type  int  feild of type selection field.int means 
-                       #  on the table order.details with
-                       # with  Label 'order de'
-    # there is no need to create Id fields in odoo , since every model creates 5 fields by default 
-    # ID , created_by,created_At,updated_by,updated_at
-    item_name=fields.Char(
-      string="item name")
-                       # create colimn 'item_name' 
-                       #feild of type  char  feild of type char field.char means 
-                       #  on the table order.details with
-                       # with  Label "order details"
-    item_price=fields.float(
+    
+    item_price=fields.Float(
       string="item price")
-                       # create colimn 'item_name' 
+                       # create colimn 'item_price' 
                        #feild of type  float  feild of type float field.float means 
                        #  on the table order.details with
-                       # with  Label "order details"
+                       # with  Label "item price"
     item_id=fields.Many2one(
     comodel_name="rest.items",
     string="item id")
@@ -49,11 +33,16 @@ class orderdetails(models.Model):
  
     order_id = fields.Many2one(
     comodel_name="order.table",
-    string="order id")
+    string="order id")  # create colimn 'order_id'  
+                    # feild of type  Many2one  feild of type FK field.Many2one means 
+                    #  on the table order.details with
+                    # with  Label "order id"
+                    # connect to id column of table  "order.table"--  comodel_name="order.table"
+                    # item_id to id of order table 
 
 
 
-    quantity=fields.float(
+    quantity=fields.Float(
         string="quantity")
 '''
 
@@ -63,7 +52,7 @@ class orderdetails(models.Model):
 # quantity
 # price
 
-how do i know which detail belongs to which order ?
+
 
 
 '''
