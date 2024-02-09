@@ -13,7 +13,7 @@ class restitems(models.Model):
     # when _inherit!= _name  means take columns from _inherit table and create new table with _name as name
     # when you have only _inherit means change existing table using this class 
  
-    price=fields.float(
+    price=fields.Float(
         string="price") # create colimn 'price' 
                        #feild of type Float  feild of type selection field.float means 
                        #  on the table rest.items with
