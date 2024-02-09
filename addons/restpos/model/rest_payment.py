@@ -13,7 +13,7 @@ class restpayment(models.Model):
     order_date=fields.Date(
         string="order date")
     
-    details_id = field.Many2one(
+    details_id = fields.Many2one(
     comodel_name="order.details",
     string="details id")
 
