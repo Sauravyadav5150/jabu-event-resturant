@@ -9,7 +9,9 @@
              <sheet>
              <group>
         <field name="id"/>
+        <field name="name"/>
          <field name="price"/>
+         
              </group>
          </sheet>
         </form>
@@ -77,6 +79,7 @@
          <field name="item_id"/>
          <field name="quantity"/>
          <field name="item_price"/>
+         <field name="line_total"/>
          </group>
          </sheet>
         </form>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_order_details,order.details,model_order_details,base.group_user,1,1,1,1
+access_order_table,order.table,model_order_table,base.group_user,1,1,1,1
+access_rest_items,rest.items,model_rest_items,base.group_user,1,1,1,1
+access_rest_payment,rest.payment,model_rest_payment,base.group_user,1,1,1,1

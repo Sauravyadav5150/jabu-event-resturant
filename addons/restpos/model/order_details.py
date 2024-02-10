@@ -44,6 +44,13 @@ class orderdetails(models.Model):
 
     quantity=fields.Float(
         string="quantity")
+    line_total =fields.Float(
+        string="Line Total" )
+    
+    @api.onchange('quantity')
+    def _compute_line_total(self):
+        self.line_total = self.quantity * self.item_price
+        pass
 '''
 
 # id
