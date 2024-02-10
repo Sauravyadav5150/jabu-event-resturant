@@ -12,7 +12,8 @@ class restitems(models.Model):
     # name of an existing table , means take all columns from this table 
     # when _inherit!= _name  means take columns from _inherit table and create new table with _name as name
     # when you have only _inherit means change existing table using this class 
- 
+    name=fields.Char(
+            string="Item Name")
     price=fields.Float(
         string="price") # create colimn 'price' 
                        #feild of type Float  feild of type selection field.float means 

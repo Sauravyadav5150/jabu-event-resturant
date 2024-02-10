@@ -7,6 +7,7 @@
     'installable': True, # this will show install button on apps 
     #  'data': [  "views/addCreateadby.xml"  ], #usuall some kind of master data  , views and so on 
      "data": [
+        "security/ir.model.access.csv",
         "views/rest_view.xml",
         "views/menus.xml"
     ],
