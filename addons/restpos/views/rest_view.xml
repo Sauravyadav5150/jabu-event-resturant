@@ -9,7 +9,6 @@
              <sheet>
              <group>
         <field name="id"/>
-          <field name="item_name"/>
          <field name="price"/>
              </group>
          </sheet>
@@ -25,8 +24,7 @@
             <field name="arch" type="xml">
                 <tree string="items Tree"> 
                 
-            <field name="id"/>
-          <field name="item_name"/>
+            <field name="id"/> 
          <field name="price"/>
                 </tree>      
             </field>
@@ -41,10 +39,10 @@
              <sheet>
              <group>
         <field name="id"/>
-          <field name="created_at"/>
          <field name="total_amount"/>
          <field name="status"/>
          <field name="order_no"/>
+         </group>
          </sheet>
         </form>
                
@@ -59,7 +57,6 @@
                 <tree string="Tables Tree"> 
                 
             <field name="id"/>
-          <field name="created_at"/>
          <field name="total_amount"/>
          <field name="status"/>
          <field name="order_no"/>
@@ -80,6 +77,7 @@
          <field name="item_id"/>
          <field name="quantity"/>
          <field name="item_price"/>
+         </group>
          </sheet>
         </form>
                
@@ -98,7 +96,7 @@
          <field name="item_id"/>
          <field name="quantity"/>
          <field name="item_price"/>
-         </sheet>
+         </tree>
             </field>
         </record>
 
@@ -114,6 +112,7 @@
           <field name="order_id"/>
          <field name="total_paid"/>
          <field name="order_date"/> 
+         </group>
          </sheet>
         </form>
                
@@ -131,6 +130,7 @@
           <field name="order_id"/>
          <field name="total_paid"/>
          <field name="order_date"/> 
-         </sheet>
-            </field>
+         </tree>
+         </field>
         </record>
+            </odoo>
