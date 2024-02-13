@@ -5,7 +5,7 @@ var = "asd"
 def check_functon():
     pass
 class busguests(models.Model): 
-    _name ='bus.guest'
+    _name ='bus.guests'
 
     phone_no=fields.Integer(
       string="phone number")

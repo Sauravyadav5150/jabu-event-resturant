@@ -21,7 +21,7 @@
 
         <record id="bus_guests_searc_view" model="ir.ui.view">
             <field name="name">bus.guests.search</field>
-            <field name="model">bus.guest</field>
+            <field name="model">bus.guests</field>
             <field name="priority">1</field> 
             <field name="arch" type="xml">
                 <tree string="Guests Tree"> 
@@ -71,8 +71,7 @@
          <field name="duration"/>
          <field name="total_seats"/>
          
-             </group>
-                </tree>      
+            </tree>      
             </field>
         </record>
 
@@ -154,7 +153,7 @@
 
         <record id="bus_payment_form_view" model="ir.ui.view">
             <field name="name">bus.payment.form</field>
-            <field name="model">bus.gpayment</field>
+            <field name="model">bus.payment</field>
             <field name="priority">1</field> 
             <field name="arch" type="xml">
         <form string="Payment Form">

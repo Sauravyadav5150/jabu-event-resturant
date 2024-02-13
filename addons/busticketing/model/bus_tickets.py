@@ -22,7 +22,7 @@ class bustickets(models.Model):
     deperature=fields.Char(
       string="deperature")
     
-    destination=fields.char(
+    destination=fields.Char(
       string="destination")
     
     total_price=fields.Float(

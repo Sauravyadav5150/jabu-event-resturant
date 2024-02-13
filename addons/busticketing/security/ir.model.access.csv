@@ -1,5 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_bus_guest,bus.guest,model_bus_guest,base.group_user,1,1,1,1
+access_bus_guests,bus.guests,model_bus_guests,base.group_user,1,1,1,1
 access_bus_info,bus.info,model_bus_info,base.group_user,1,1,1,1
 access_bus_seats,bus.seats,model_bus_seats,base.group_user,1,1,1,1
 access_bus_tickets,bus.tickets,model_bus_tickets,base.group_user,1,1,1,1

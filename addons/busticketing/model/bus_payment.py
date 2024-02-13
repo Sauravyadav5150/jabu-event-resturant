@@ -11,10 +11,10 @@ class buspayment(models.Model):
     comodel_name="bus.tickets",
     string="ticket id")
 
-    payment_amount=fields.Char(
+    payment_amount=fields.Float(
       string="payment amount")
 
-    method=fields.char(
+    method=fields.Char(
       string="method")
     
 
