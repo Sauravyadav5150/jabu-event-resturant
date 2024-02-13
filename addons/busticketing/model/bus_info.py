@@ -9,6 +9,8 @@ class businfo(models.Model):
 
     deperature_point=fields.Char(
       string="deperature point")
+    name=fields.Char(
+      string="bus Name")
     
     destination_point=fields.Char(
       string="destination point")
