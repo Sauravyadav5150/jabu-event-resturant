@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="bus_guests_form_view" model="ir.ui.view">
+            <field name="name">bus.guest.form</field>
+            <field name="model">bus.guests</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Guest Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="phone_no"/>
+         <field name="address"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="bus_guests_searc_view" model="ir.ui.view">
+            <field name="name">bus.guests.search</field>
+            <field name="model">bus.guest</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="Guests Tree"> 
+                
+            <field name="id"/> 
+         <field name="phone_no"/>
+         <field name="address"/>
+                </tree>      
+            </field>
+        </record>
+
+        <record id="bus_info_form_view" model="ir.ui.view">
+            <field name="name">bus.info.form</field>
+            <field name="model">bus.info</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Info Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="deperature_point"/>
+         <field name="destination_point"/>
+         <field name="deperature_date"/>
+         <field name="arrival_date"/>
+         <field name="duration"/>
+         <field name="total_seats"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="bus_info_searc_view" model="ir.ui.view">
+            <field name="name">bus.info.search</field>
+            <field name="model">bus.info</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="Infos Tree"> 
+                
+             <field name="id"/>
+        <field name="deperature_point"/>
+         <field name="destination_point"/>
+         <field name="deperature_date"/>
+         <field name="arrival_date"/>
+         <field name="duration"/>
+         <field name="total_seats"/>
+         
+             </group>
+                </tree>      
+            </field>
+        </record>
+
+         <record id="bus_seats_form_view" model="ir.ui.view">
+            <field name="name">bus.seats.form</field>
+            <field name="model">bus.seats</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Seat Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="bus_id"/>
+         <field name="seat_no"/>
+         <field name="seat_price"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="bus_seats_searc_view" model="ir.ui.view">
+            <field name="name">bus.seats.search</field>
+            <field name="model">bus.seats</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="Seats Tree"> 
+                
+            <field name="id"/>
+        <field name="bus_id"/>
+         <field name="seat_no"/>
+         <field name="seat_price"/>
+                </tree>      
+            </field>
+        </record>
+
+        <record id="bus_tickets_form_view" model="ir.ui.view">
+            <field name="name">bus.tickets.form</field>
+            <field name="model">bus.tickets</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Ticket Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="guest_id"/>
+        <field name="bus_id"/>
+        <field name="seat_id"/>
+         <field name="deperature"/>
+         <field name="destination"/>
+         <field name="total_price"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+           <record id="bus_tickets_searc_view" model="ir.ui.view">
+            <field name="name">bus.tickets.search</field>
+            <field name="model">bus.tickets</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="Tickets Tree"> 
+                
+           <field name="id"/>
+        <field name="guest_id"/>
+        <field name="bus_id"/>
+        <field name="seat_id"/>
+         <field name="deperature"/>
+         <field name="destination"/>
+         <field name="total_price"/>
+                </tree>      
+            </field>
+        </record>
+
+        <record id="bus_payment_form_view" model="ir.ui.view">
+            <field name="name">bus.payment.form</field>
+            <field name="model">bus.gpayment</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Payment Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="ticket_id"/>
+         <field name="payment_amount"/>
+         <field name="method"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+        <record id="bus_payment_searc_view" model="ir.ui.view">
+            <field name="name">bus.payment.search</field>
+            <field name="model">bus.payment</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="payments Tree"> 
+                
+        <field name="id"/>
+        <field name="ticket_id"/>
+         <field name="payment_amount"/>
+         <field name="method"/>
+                </tree>      
+            </field>
+        </record>
+
+    </odoo>
+
+
+        
+

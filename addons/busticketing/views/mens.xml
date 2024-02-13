@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="bus_main_menu" model="ir.ui.menu">
+  <field name="name">Bus</field>   
+   <field name="sequence">10</field>   
+</record>
+<record id="guests_list" model="ir.actions.act_window">
+  <field name="name">Guests Window</field>   
+    <field name="type"   >ir.actions.act_window</field>
+     <field name="res_model"   >rest.guests</field>
+     <field name="view_mode"   >tree,form</field>
+     <field name="context">{}</field>
+     <field name="view_id" ref="bus_guests_searc_view"/>  
+     <field name="search_view_id" ref="bus_guests_searc_view"/>
+</record>
+<record id="bus_guests" model="ir.ui.menu">
+  <field name="name">Guests</field>   
+   <field name="sequence">10</field> 
+    <field name="parent_id" ref="bus_main_menu"></field>   
+    <field name="action" ref="guests_list" />
+</record>
+
+<record id="bus_info" model="ir.actions.act_window">
+  <field name="name">Infos Window</field>   
+    <field name="type"   >ir.actions.act_window</field>
+     <field name="res_model"   >bus.info</field>
+     <field name="view_mode"   >tree,form</field>
+     <field name="context">{}</field>
+     <field name="view_id" ref="bus_info_searc_view"/>  
+     <field name="search_view_id" ref="bus_info_searc_view"/>
+</record>
+<record id="bus_info" model="ir.ui.menu">
+  <field name="name">Infos</field>   
+   <field name="sequence">10</field> 
+    <field name="parent_id" ref="bus_main_menu"></field>   
+    <field name="action" ref="infos_list" />
+</record>
+
+<record id="bus_seat" model="ir.actions.act_window">
+  <field name="name">Seats Window</field>   
+    <field name="type"   >ir.actions.act_window</field>
+     <field name="res_model"   >rest.seat</field>
+     <field name="view_mode"   >tree,form</field>
+     <field name="context">{}</field>
+     <field name="view_id" ref="bus_seat_searc_view"/>  
+     <field name="search_view_id" ref="bus_seat_searc_view"/>
+</record>
+<record id="bus_seat" model="ir.ui.menu">
+  <field name="name">Seats</field>   
+   <field name="sequence">10</field> 
+    <field name="parent_id" ref="bus_main_menu"></field>   
+    <field name="action" ref="seats_list" />
+</record>
+
+<record id="bus_tickets" model="ir.actions.act_window">
+  <field name="name">Tickets Window</field>   
+    <field name="type"   >ir.actions.act_window</field>
+     <field name="res_model"   >bus.tickets</field>
+     <field name="view_mode"   >tree,form</field>
+     <field name="context">{}</field>
+     <field name="view_id" ref="bus_tickets_searc_view"/>  
+     <field name="search_view_id" ref="bus_tickets_searc_view"/>
+</record>
+<record id="bus_tickets" model="ir.ui.menu">
+  <field name="name">Tickets</field>   
+   <field name="sequence">10</field> 
+    <field name="parent_id" ref="bus_main_menu"></field>   
+    <field name="action" ref="tickets_list" />
+</record>
+
+<record id="bus_payment_list" model="ir.actions.act_window">
+  <field name="name">Payments Window</field>   
+    <field name="type"   >ir.actions.act_window</field>
+     <field name="res_model"   >bus.payment</field>
+     <field name="view_mode"   >tree,form</field>
+     <field name="context">{}</field>
+     <field name="view_id" ref="bus_payment_searc_view"/>  
+     <field name="search_view_id" ref="bus_payment_searc_view"/>
+</record>
+<record id="bus_payment_action" model="ir.ui.menu">
+  <field name="name">Payments</field>   
+   <field name="sequence">9</field> 
+    <field name="parent_id" ref="bus_main_menu"></field>   
+    <field name="action" ref="bus_payment_list" />
+</record>
+
+</odoo>
