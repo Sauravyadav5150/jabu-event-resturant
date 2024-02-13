@@ -27,11 +27,13 @@ class bustickets(models.Model):
     
     total_price=fields.Float(
       string="total price")
+
+    def check_method(self):
+        pass
     
     
 
-def check_method(self):
-        pass
+
 
 
     

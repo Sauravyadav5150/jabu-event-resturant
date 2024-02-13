@@ -16,8 +16,10 @@ class buspayment(models.Model):
 
     method=fields.char(
       string="method")
+    
 
-def check_method(self):
+    def check_method(self):
         pass
+
 
 

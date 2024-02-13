@@ -13,5 +13,6 @@ class busguests(models.Model):
     address=fields.Char(
       string="address") 
     
-def check_method(self):
+    def check_method(self):
         pass
+    

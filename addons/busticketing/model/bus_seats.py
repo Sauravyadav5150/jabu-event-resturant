@@ -16,8 +16,9 @@ class busseats(models.Model):
     
     seat_price=fields.Float(
       string="seat price")
-
-def check_method(self):
+    
+    def check_method(self):
         pass
+
 
 

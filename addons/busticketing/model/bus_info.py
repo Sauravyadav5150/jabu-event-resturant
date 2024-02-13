@@ -25,5 +25,6 @@ class businfo(models.Model):
     total_seats=fields.Integer(
       string="total seats")
     
-def check_method(self):
+    def check_method(self):
         pass
+    
