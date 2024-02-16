@@ -12,7 +12,7 @@ class bustickets(models.Model):
     string="bus id")
 
     guest_id = fields.Many2one(
-    comodel_name="bus.guest",
+    comodel_name="bus.guests",
     string="guest id")
 
     seat_id = fields.Many2one(
