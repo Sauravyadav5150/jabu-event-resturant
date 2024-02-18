@@ -83,6 +83,40 @@
          <field name="contact_no"/>
          <field name="address"/>
              </group>
+              <notebook>
+                    <page string="Books" name="given_books">
+                    <field  name="given_books"  
+                            widget="section_and_note_one2many"
+                            mode="tree">
+                              <tree
+                                string="Sales Order Lines"
+                                editable="bottom"
+                                limit="200"
+                            >
+                            <field name="book_id"/>  
+                            <field name="issue_date"/>
+                            <field name="return_date"/>
+                            <field name="penalty"/>    
+                             </tree>
+                        </field>
+                    </page>
+                    <page string="Books" name="given_books">
+                    <field name="given_books"  
+                            widget="section_and_note_one2many"
+                            mode="tree" >
+                              <tree
+                                string="Sales Order Lines"
+                                editable="bottom"
+                                limit="200"
+                            >
+                            <field name="book_id"/>  
+                            <field name="issue_date"/>
+                            <field name="return_date"/>
+                            <field name="penalty"/>    
+                             </tree>
+                        </field>
+                    </page>
+            </notebook>
          </sheet>
         </form>
                

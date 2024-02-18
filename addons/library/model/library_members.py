@@ -27,6 +27,10 @@ class librarymembers(models.Model):
                        #  on the table library.members with
                        # with  Label "address"
     
+    given_books = fields.One2many( "books.given", "member_id", string="Books Taken")
+
+    # 'sale.order.line', 'order_id', string='Order Lines'
+    
 def check_method(self):
      pass
 
