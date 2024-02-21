@@ -117,6 +117,40 @@
                         </field>
                     </page>
             </notebook>
+             <notebook>
+                    <page string="Books borowed" name="books_borowed">
+                    <field  name="books_borowed"  
+                            widget="section_and_note_one2many"
+                            mode="tree">
+                              <tree
+                                string="Sales Order Lines"
+                                editable="bottom"
+                                limit="200"
+                            >
+                            <field name="book_id"/>  
+                            <field name="issue_date"/>
+                            <field name="return_date"/>
+                            <field name="penalty"/>    
+                             </tree>
+                        </field>
+                    </page>
+                    <page string="Books borowed" name="books_borowed">
+                    <field name="books_borowed"  
+                            widget="section_and_note_one2many"
+                            mode="tree" >
+                              <tree
+                                string="Sales Order Lines"
+                                editable="bottom"
+                                limit="200"
+                            >
+                            <field name="book_id"/>  
+                            <field name="issue_date"/>
+                            <field name="return_date"/>
+                            <field name="penalty"/>    
+                             </tree>
+                        </field>
+                    </page>
+            </notebook>
          </sheet>
         </form>
                

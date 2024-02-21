@@ -29,6 +29,9 @@ class librarymembers(models.Model):
     
     given_books = fields.One2many( "books.given", "member_id", string="Books Taken")
 
+    books_borowed = fields.One2many( "books.given", "book_id", string="Books borowed")
+    
+    
     # 'sale.order.line', 'order_id', string='Order Lines'
     
 def check_method(self):
