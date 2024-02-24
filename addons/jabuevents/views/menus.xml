@@ -20,7 +20,6 @@
     <field name="action" ref="details_list" />
 </record>
 
-</record>
 <record id="themes_list" model="ir.actions.act_window">
   <field name="name">themes Window</field>   
     <field name="type"   >ir.actions.act_window</field>
@@ -50,7 +49,7 @@
   <field name="name">venues</field>   
    <field name="sequence">9</field> 
     <field name="parent_id" ref="event_main_menu"></field>   
-    <field name="action" ref="event_venues_list" />
+    <field name="action" ref="venues_list" />
 </record>
 
 </odoo>
