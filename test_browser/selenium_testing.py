@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 
 # get google.co.in 
 driver.get("http://localhost:8069/web/login") 
-driver.find_element(By.ID, "login").send_keys("test@test.dev")
+driver.find_element(By.ID, "login").send_keys("test@dev.dev")
 driver.find_element(By.ID, "password").send_keys("saurav123")
 #driver.get("http://localhost:8069/web/login")
 driver.find_element(By.CSS_SELECTOR, ".btn-primary").click()

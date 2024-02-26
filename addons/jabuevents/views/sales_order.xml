@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="sale_order_view_details" model="ir.ui.view">
+        <field name="name">sale.order.activity</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.order_case_tree_view_oppor" />
+        <field name="arch" type="xml">
+        <field name="event_details" position="before">
+        <field name="id"/>
+        <field name="name"/>
+        <field name="event_type"/>
+         <field name="venues_id"/>
+         <field name="themes_id"/>
+         <field name="no_of_pax"/>
+                          
+                </field> 
+            </field>
+        </record>
+
+    <record id="sale_order_view_venues" model="ir.ui.view">
+        <field name="name">sale.order.activity</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.order_case_tree_view_oppor" />
+        <field name="arch" type="xml">
+        <field name="event_venues" position="before">
+        <field name="id"/>
+        <field name="name"/>
+        <field name="destination"/>
+          </field> 
+            </field>
+        </record>
+
+    <record id="sale_order_view_themes" model="ir.ui.view">
+        <field name="name">sale.order.activity</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.order_case_tree_view_oppor" />
+        <field name="arch" type="xml">
+        <field name="event_themes" position="before">
+        <field name="id"/>
+        <field name="name"/>
+          </field> 
+            </field>
+        </record>
+
+
+<odoo>
+
+                
+
+      
