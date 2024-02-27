@@ -5,7 +5,7 @@
     <record id="sale_order_view_details" model="ir.ui.view">
         <field name="name">sale.order.activity</field>
         <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.order_case_tree_view_oppor" />
+        <field name="inherit_id" ref="sale.order.tree" />
         <field name="arch" type="xml">
         <field name="event_details" position="before">
         <field name="id"/>
@@ -22,7 +22,7 @@
     <record id="sale_order_view_venues" model="ir.ui.view">
         <field name="name">sale.order.activity</field>
         <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.order_case_tree_view_oppor" />
+        <field name="inherit_id" ref=""sale.order.tree />
         <field name="arch" type="xml">
         <field name="event_venues" position="before">
         <field name="id"/>
@@ -35,7 +35,7 @@
     <record id="sale_order_view_themes" model="ir.ui.view">
         <field name="name">sale.order.activity</field>
         <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.order_case_tree_view_oppor" />
+        <field name="inherit_id" ref="sale.order.tree" />
         <field name="arch" type="xml">
         <field name="event_themes" position="before">
         <field name="id"/>
