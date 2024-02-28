@@ -14,29 +14,9 @@
          <field name="venues_id"/>
          <field name="themes_id"/>
          <field name="no_of_pax"/>
-             </group>
-              <notebook>
-                    <page string="Details" name="event_details">
-                    <field  name="event_details"  
-                            widget="section_and_note_one2many"
-                            mode="tree">
-                              <tree
-                                string="Sales Order Lines"
-                                editable="bottom"
-                                limit="200"
-                            >
-                         <field name="id"/>
-                         <field name="name"/>
-                         <field name="event_type"/>
-                         <field name="venues_id"/>
-                         <field name="themes_id"/>
-                         <field name="no_of_pax"/>   
-                         </tree>
-                        </field>
-                    </page>
-                </notebook>    
-                </sheet>
-             </form>
+             </group>   
+             </sheet>
+         </form>
                
             </field>
         </record>
@@ -102,6 +82,26 @@
         <field name="name"/>
         <field name="destination"/>
              </group>
+              <notebook>
+                    <page string="Events" name="details_event">
+                    <field  name="details_event"  
+                            widget="section_and_note_one2many"
+                            mode="tree">
+                              <tree
+                                string="Sales Order Lines"
+                                editable="bottom"
+                                limit="200"
+                            >
+                         <field name="id"/>
+                         <field name="name"/>
+                         <field name="event_type"/>
+                         <field name="venues_id"/>
+                         <field name="themes_id"/>
+                         <field name="no_of_pax"/>   
+                         </tree>
+                        </field>
+                    </page>
+                </notebook> 
          </sheet>
         </form>
                
@@ -124,4 +124,3 @@
 
 </odoo>
 
-#imort 

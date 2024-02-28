@@ -12,6 +12,8 @@ class eventvenues(models.Model):
     destination=fields.Char(
       string="destination")
     
+    event_details = fields.One2many( "event.details", "venues_id", string="Event details")
+    
     def check_method(self):
         pass
     
