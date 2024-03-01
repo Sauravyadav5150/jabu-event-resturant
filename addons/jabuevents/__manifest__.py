@@ -10,9 +10,10 @@
         "security/ir.model.access.csv",
         "views/jabu_view.xml",
         "views/menus.xml"
-        "sales/order.xml"
+        "views/sales_order.xml"
+        
         
     ],
-    'depends': ['base','base_setup']  #''' modules which will get installed before this  one '''
+    'depends': ['base','base_setup','crm']  #''' modules which will get installed before this  one '''
 }
 

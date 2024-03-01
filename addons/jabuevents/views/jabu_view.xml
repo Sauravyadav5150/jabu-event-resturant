@@ -83,8 +83,8 @@
         <field name="destination"/>
              </group>
               <notebook>
-                    <page string="Events" name="details_event">
-                    <field  name="details_event"  
+                    <page string="Events" name="event_details">
+                    <field  name="event_details"  
                             widget="section_and_note_one2many"
                             mode="tree">
                               <tree
