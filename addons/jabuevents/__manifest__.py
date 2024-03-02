@@ -11,6 +11,7 @@
         "views/jabu_view.xml",
         "views/menus.xml"
         "views/sale_order.xml"
+        "wizard/create_events.xml"
         
         
     ],
