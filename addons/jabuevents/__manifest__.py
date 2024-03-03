@@ -9,12 +9,12 @@
      "data": [
         "security/ir.model.access.csv",
         "views/jabu_view.xml",
-        "views/menus.xml"
-        "views/sale_order.xml"
+        "views/menus.xml",
+        "views/sale_order.xml",
         "wizard/create_events.xml"
         
         
     ],
-    'depends': ['base','base_setup','sale_order']  #''' modules which will get installed before this  one '''
+    'depends': ['base','base_setup','sale_crm']  #''' modules which will get installed before this  one '''
 }
 

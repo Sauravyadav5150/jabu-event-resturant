@@ -7,9 +7,12 @@ class createevents(models.TransientModel):
     event_id = fields.Many2many('event.details', string='details')
     event_date=fields.Date(string="event date")
     event_destination=fields.Char(string="event destination")
-    venues_id = fields.Many2one('event.venues', 'venues')(
+    venues_id = fields.Many2one('event.venues', string='venues')
+    '''
+    (
         'Closing Note', sanitize=True
     )
+    '''
 
     def print_report(self):
         data = {
