@@ -16,7 +16,7 @@
          </field>
      </record>
 
-      <record id="create_event_wizard" model="ir.actions.act_window">
+      <record id="create_events_wizard" model="ir.actions.act_window">
         <field name="name">Create Events</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">create.events</field>
