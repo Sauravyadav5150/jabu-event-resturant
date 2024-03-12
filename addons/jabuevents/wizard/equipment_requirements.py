@@ -6,7 +6,7 @@ class equipmentrequirements(models.TransientModel):
 
     light_equipments = fields.Boolean(string='light equipments')
     sound_equipments = fields.Boolean(string='sound equipments')
-    av_equipements = fields.text(string='av equipments')
+    av_equipements = fields.Text(string='av equipments')
     tech_riders = fields.Boolean(string='tech rider')
    
     '''

@@ -4,7 +4,7 @@ class eventactivities(models.TransientModel):
     _name = 'evet.activities'
     _description = 'all the details of dmc'
 
-    team_building = fields.text(string='team building')
+    team_building = fields.Text(string='team building')
     cruise=fields.Boolean(string="cruise")
    
     '''

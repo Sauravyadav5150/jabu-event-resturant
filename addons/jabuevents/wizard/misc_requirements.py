@@ -4,12 +4,12 @@ class miscrequirements(models.TransientModel):
     _name = 'misc.requirements'
     _description = 'all the details of event'
 
-    gifts = fields.tex(string='gifts')
+    gifts = fields.Text(string='gifts')
     furniture_rental=fields.Boolean(string="furniture rental")
-    hybrid_uplink=fields.text(string="hybrid uplink")
+    hybrid_uplink=fields.Text(string="hybrid uplink")
     trophy=fields.Boolean(string="trophy")
-    podium=fields.text(string="podium")
-    translation = fields.text(string='translation')
+    podium=fields.Text(string="podium")
+    translation = fields.Text(string='translation')
     '''
     (
         'Closing Note', sanitize=True

@@ -4,7 +4,7 @@ class eventmanpower(models.TransientModel):
     _name = 'event.manpower'
     _description = 'all the details of dmc'
 
-    emcee = fields.text(string='emcee')
+    emcee = fields.Text(string='emcee')
     hostess=fields.Boolean(string="hostess")
     ushers=fields.Boolean(string="ushers")
     models=fields.Boolean(string="models")

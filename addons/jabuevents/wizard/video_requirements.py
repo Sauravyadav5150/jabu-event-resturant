@@ -7,7 +7,7 @@ class videorequirements(models.TransientModel):
     photo = fields.Boolean(string='photo')
     video=fields.Boolean(string="video")
     highlight_video_edit=fields.Boolean(string="highlight video edit")
-    ob_setup = fields.text(string='ob setup')
+    ob_setup = fields.Text(string='ob setup')
     '''
     (
         'Closing Note', sanitize=True

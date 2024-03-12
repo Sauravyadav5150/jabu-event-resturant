@@ -26,3 +26,12 @@
     </record>
 
 </odoo>
+
+
+<!-- <record id="create_events" model="ir.ui.menu">
+  <field name="name">events</field>   
+   <field name="sequence">10</field> 
+    <field name="parent_id" ref="create_events_main_menu"></field>   
+    <field name="action" ref="create_events_wizard" />
+</record>
+</odoo> -->
