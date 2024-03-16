@@ -6,7 +6,7 @@ class evententertainment(models.TransientModel):
 
     thai_theme = fields.Text(string='thai theme')
     tech_led=fields.Text(string="tech/led")
-    brand=fields.Text(string="brand/musicians/dj")
+    band=fields.Text(string="brand/musicians/dj")
     dance=fields.Text(string="dance")
     ambient=fields.Text(string="ambient")
     cirque=fields.Text(string="cirque")

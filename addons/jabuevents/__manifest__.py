@@ -11,8 +11,21 @@
         "views/jabu_view.xml",
         "views/menus.xml",
         "views/sale_order.xml",
-        "wizard/create_events_views.xml",
-        "wizard/menues_views.xml",
+        "wizard/create_events.xml",
+        "wizard/design_requirements.xml",
+        "wizard/dmc_requirements.xml",
+        "wizard/equipment_requirements.xml",
+        "wizard/event_activities.xml",
+        "wizard/event_entertainment.xml",
+        "wizard/event_manpower.xml",
+        "wizard/event_photobooth.xml",
+        "wizard/misc_requirements.xml",
+        "wizard/production_branding.xml",
+        "wizard/registration_requirements.xml",
+        "wizard/registration_requirements.xml",
+        "wizard/video_requirements.xml",
+        
+        
         
         
     ],

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="video_requirements_form" model="ir.ui.view">
+         <field name="name">video.requirements.wizard</field>
+         <field name="model">video.requirements</field>
+         <field name="arch" type="xml">
+            <form string="video requirements">
+                <group>
+                    <field name="photo"/>
+                    <field name="video"/>
+                    <field name="highliht_video_edit"/>
+                    <field name="ob_setup"/>
+                </group>
+            </form>
+         </field>
+     </record>
+
+      <record id="video_requirements_wizard" model="ir.actions.act_window">
+        <field name="name">video requirements</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">video.requirements</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="video_requirements_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

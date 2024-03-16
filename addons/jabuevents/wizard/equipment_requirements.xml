@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="equipment_requirements_form" model="ir.ui.view">
+         <field name="name">equipment.requirements.wizard</field>
+         <field name="model">equipment.requirements</field>
+         <field name="arch" type="xml">
+            <form string="equipment requirements">
+                <group>
+                    <field name="light_equipments"/>
+                    <field name="sound_equipments"/>
+                    <field name="av_equipments"/>
+                    <field name="tech_riders"/>
+                </group>
+            </form>
+         </field>
+     </record>
+
+      <record id="equipment_requirements_wizard" model="ir.actions.act_window">
+        <field name="name">equipment requirements</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">equipment.requirements</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="equipment_requirements_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="misc_requirements_form" model="ir.ui.view">
+         <field name="name">misc.requirements.wizard</field>
+         <field name="model">misc.requirements</field>
+         <field name="arch" type="xml">
+            <form string="misc requirements">
+                <group>
+                    <field name="gifts"/>
+                    <field name="furniture_rental"/>
+                    <field name="hybrid_rental"/>
+                    <field name="trophy"/>
+                    <field name="podium"/>
+                    <field name="translation"/>
+                </group>
+            </form>
+         </field>
+     </record>
+
+      <record id="misc_requirements_wizard" model="ir.actions.act_window">
+        <field name="name">misc requirements</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">misc.requirements</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="misc_requirements_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>
