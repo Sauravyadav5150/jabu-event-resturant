@@ -6,7 +6,7 @@ def check_functon():
 class jabupayment(models.Model):
     _name ='jabu.payment' 
     
-    amount=fields.Int(
+    amount=fields.Float(
         string="product amount")
     
     payment_date=fields.Date(

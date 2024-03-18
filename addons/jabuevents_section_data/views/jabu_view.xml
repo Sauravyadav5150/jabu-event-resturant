@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="jabu_section_form_view" model="ir.ui.view">
+            <field name="name">jabu.section.form</field>
+            <field name="model">jabu.section</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Section Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="section_name"/>
+        <field name="section_description"/>
+         <field name="priority"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+         <record id="jabu_section_searc_view" model="ir.ui.view">
+            <field name="name">jabu.section.search</field>
+            <field name="model">jabu.section</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="section Tree"> 
+                
+             <field name="id"/>
+        <field name="section_name"/>
+        <field name="section_description"/>
+         <field name="priority"/>
+                </tree>      
+            </field>
+        </record>
+
+         <record id="jabu_product_form_view" model="ir.ui.view">
+            <field name="name">jabu.product.form</field>
+            <field name="model">jabu.product</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Product Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="product_name"/>
+        <field name="product_description"/>
+        <field name="quantity"/>
+         <field name="price"/>
+         <field name="section_id"/>
+         <field name="manufacturer"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+         <record id="jabu_product_searc_view" model="ir.ui.view">
+            <field name="name">jabu.product.search</field>
+            <field name="model">jabu.product</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="products Tree"> 
+                
+             <field name="id"/>
+        <field name="product_name"/>
+        <field name="product_description"/>
+        <field name="quantity"/>
+         <field name="price"/>
+         <field name="section_id"/>
+         <field name="manufacturer"/>
+                </tree>      
+            </field>
+        </record>
+
+         <record id="jabu_payment_form_view" model="ir.ui.view">
+            <field name="name">jabu.payment.form</field>
+            <field name="model">jabu.payment</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+        <form string="Payment Form">
+             <sheet>
+             <group>
+        <field name="id"/>
+        <field name="amount"/>
+         <field name="payment_date"/>
+         <field name="product_id"/>
+         
+             </group>
+         </sheet>
+        </form>
+               
+            </field>
+        </record>
+
+         <record id="jabu_payment_searc_view" model="ir.ui.view">
+            <field name="name">jabu.payment.search</field>
+            <field name="model">jabu.payment</field>
+            <field name="priority">1</field> 
+            <field name="arch" type="xml">
+                <tree string="payment Tree"> 
+             <field name="id"/>
+        <field name="amount"/>
+         <field name="payment_date"/>
+         <field name="product_id"/>
+                </tree>      
+            </field>
+        </record>
+
+</odoo>

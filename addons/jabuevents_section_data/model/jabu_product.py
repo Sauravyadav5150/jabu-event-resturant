@@ -9,13 +9,13 @@ class jabuproduct(models.Model):
     product_name=fields.Char(
         string="product name")
     
-    product_description=fields.Char(
+    product_description=fields.Text(
         string="product description")
     
-    quantity=fields.Int(
+    quantity=fields.Integer(
         string="quantity")
     
-    price=fields.Int(
+    price=fields.Float(
         string="price")
     
     manufacturer=fields.Char(

@@ -12,7 +12,7 @@ class jabusection(models.Model):
     section_description=fields.Text(
         string="section description")
     
-    priority=fields.Int(
+    priority=fields.Integer(
         string="priority")
 
 
