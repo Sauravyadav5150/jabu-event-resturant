@@ -12,7 +12,7 @@
         <field name="section_name"/>
         <field name="section_description"/>
          <field name="priority"/>
-         <field name="product_id"/>
+         <field name="product"/>
          
              </group>
          </sheet>
@@ -32,7 +32,7 @@
         <field name="section_name"/>
         <field name="section_description"/>
          <field name="priority"/>
-          <field name="product_id"/>
+          <field name="product"/>
                 </tree>      
             </field>
         </record>

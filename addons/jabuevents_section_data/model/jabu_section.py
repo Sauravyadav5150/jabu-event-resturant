@@ -15,10 +15,7 @@ class jabusection(models.Model):
     priority=fields.Integer(
         string="priority")
     
-    product_id = fields.Many2one(
-    comodel_name="jabu.product",
-    string="product id")
-
+    products = fields.One2many( "jabu.products", "product_id", string="all the types of product")
         
 
 
