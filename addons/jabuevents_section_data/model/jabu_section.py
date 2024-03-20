@@ -14,6 +14,12 @@ class jabusection(models.Model):
     
     priority=fields.Integer(
         string="priority")
+    
+    product_id = fields.Many2one(
+    comodel_name="jabu.product",
+    string="product id")
+
+        
 
 
     def check_method(self):

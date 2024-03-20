@@ -12,6 +12,7 @@
         <field name="section_name"/>
         <field name="section_description"/>
          <field name="priority"/>
+         <field name="product_id"/>
          
              </group>
          </sheet>
@@ -31,6 +32,7 @@
         <field name="section_name"/>
         <field name="section_description"/>
          <field name="priority"/>
+          <field name="product_id"/>
                 </tree>      
             </field>
         </record>
@@ -76,38 +78,5 @@
             </field>
         </record>
 
-         <record id="jabu_payment_form_view" model="ir.ui.view">
-            <field name="name">jabu.payment.form</field>
-            <field name="model">jabu.payment</field>
-            <field name="priority">1</field> 
-            <field name="arch" type="xml">
-        <form string="Payment Form">
-             <sheet>
-             <group>
-        <field name="id"/>
-        <field name="amount"/>
-         <field name="payment_date"/>
-         <field name="product_id"/>
-         
-             </group>
-         </sheet>
-        </form>
-               
-            </field>
-        </record>
-
-         <record id="jabu_payment_searc_view" model="ir.ui.view">
-            <field name="name">jabu.payment.search</field>
-            <field name="model">jabu.payment</field>
-            <field name="priority">1</field> 
-            <field name="arch" type="xml">
-                <tree string="payment Tree"> 
-             <field name="id"/>
-        <field name="amount"/>
-         <field name="payment_date"/>
-         <field name="product_id"/>
-                </tree>      
-            </field>
-        </record>
 
 </odoo>

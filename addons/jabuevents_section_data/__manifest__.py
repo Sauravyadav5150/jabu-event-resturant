@@ -1,7 +1,7 @@
 {
     'name': 'Version One section ',
     'version': '0.1',
-    'category': 'Section data',
+    'category': 'Section',
     'sequence': 15,
     'summary': 'Learn and understand basics of odoo aned show me ',
     'installable': True, # this will show install button on apps 
