@@ -8,7 +8,7 @@
     #  'data': [  "views/addCreateadby.xml"  ], #usuall some kind of master data  , views and so on 
      "data": [
         "security/ir.model.access.csv",
-        "views/jabu_view.xml",
+        "views/section_view.xml",
         "views/menues.xml"
     ],
     'depends': ['base','base_setup']  #''' modules which will get installed before this  one '''

@@ -3,8 +3,8 @@ from odoo import api, fields, models
 var = "asd"
 def check_functon():
     pass
-class jabuproduct(models.Model):
-    _name ='jabu.product' 
+class sectionproduct(models.Model):
+    _name ='section.product' 
     
     product_name=fields.Char(
         string="product name")
@@ -20,11 +20,10 @@ class jabuproduct(models.Model):
     
     manufacturer=fields.Char(
         string="manufacturer")
-    
-    section_id = fields.Many2one(
-    comodel_name="jabu.section",
-    string="section id")
 
+    head_id = fields.Many2one(
+    comodel_name="section.head",
+    string="head id")
     
     
 

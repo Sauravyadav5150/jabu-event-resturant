@@ -1,5 +1,5 @@
-from.import jabu_section
-from.import jabu_product
+from.import section_head
+from.import section_product
 
 
 

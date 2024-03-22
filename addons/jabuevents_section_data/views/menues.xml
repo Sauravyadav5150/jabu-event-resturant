@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<record id="jabu_main_menu" model="ir.ui.menu">
-  <field name="name">Resturant</field>   
+<record id="section_main_menu" model="ir.ui.menu">
+  <field name="name">section</field>   
    <field name="sequence">10</field>   
 </record>
-<record id="section_list" model="ir.actions.act_window">
-  <field name="name">section Window</field>   
+<record id="head_list" model="ir.actions.act_window">
+  <field name="name">head Window</field>   
     <field name="type"   >ir.actions.act_window</field>
-     <field name="res_model"   >jabu.section</field>
+     <field name="res_model"   >section.head</field>
      <field name="view_mode"   >tree,form</field>
      <field name="context">{}</field>
-     <field name="view_id" ref="jabu_section_searc_view"/>  
-     <field name="search_view_id" ref="jabu_section_searc_view"/>
+     <field name="view_id" ref="section_head_searc_view"/>  
+     <field name="search_view_id" ref="section_head_searc_view"/>
 </record>
-<record id="jabu_section" model="ir.ui.menu">
-  <field name="name">Section</field>   
+<record id="section_head" model="ir.ui.menu">
+  <field name="name">head</field>   
    <field name="sequence">10</field> 
-    <field name="parent_id" ref="jabu_main_menu"></field>   
-    <field name="action" ref="section_list" />
+    <field name="parent_id" ref="section_main_menu"></field>   
+    <field name="action" ref="head_list" />
 </record>
 
 <record id="product_list" model="ir.actions.act_window">
   <field name="name">Product Window</field>   
     <field name="type"   >ir.actions.act_window</field>
-     <field name="res_model"   >jabu.product</field>
+     <field name="res_model"   >section.product</field>
      <field name="view_mode"   >tree,form</field>
      <field name="context">{}</field>
-     <field name="view_id" ref="jabu_product_searc_view"/>  
-     <field name="search_view_id" ref="jabu_product_searc_view"/>
+     <field name="view_id" ref="section_product_searc_view"/>  
+     <field name="search_view_id" ref="section_product_searc_view"/>
 </record>
-<record id="jabu_product" model="ir.ui.menu">
+<record id="section_product" model="ir.ui.menu">
   <field name="name">Product</field>   
    <field name="sequence">10</field> 
-    <field name="parent_id" ref="jabu_main_menu"></field>   
+    <field name="parent_id" ref="section_main_menu"></field>   
     <field name="action" ref="product_list" />
 </record>
 

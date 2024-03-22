@@ -3,8 +3,8 @@ from odoo import api, fields, models
 var = "asd"
 def check_functon():
     pass
-class jabusection(models.Model):
-    _name ='jabu.section' 
+class sectionhead(models.Model):
+    _name ='section.head' 
     
     section_name=fields.Char(
         string="section name")
@@ -15,7 +15,7 @@ class jabusection(models.Model):
     priority=fields.Integer(
         string="priority")
     
-    products = fields.One2many( "jabu.products", "product_id", string="all the types of product")
+    products = fields.One2many( "section.product", "head_id", string="all the types of product")
         
 
 

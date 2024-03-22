@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_jabu_section,jabu.setion,model_jabu_section,base.group_user,1,1,1,1
-access_jabu_product,jabu.product,model_jabu_product,base.group_user,1,1,1,1
+access_section_head,section.head,model_section_head,base.group_user,1,1,1,1
+access_section_product,section.product,model_section_product,base.group_user,1,1,1,1
 
