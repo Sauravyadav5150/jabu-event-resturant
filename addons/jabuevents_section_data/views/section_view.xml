@@ -15,6 +15,25 @@
          <field name="products"/>
          
              </group>
+                <notebook>
+                    <page string="all products" name="products">
+                       <field  name="products"  
+                            widget="section_and_note_one2many"
+                            mode="tree">
+                              <tree
+                                string="Sales Order Lines"
+                                editable="bottom"
+                                limit="200"
+                            >
+                             <field name="id"/>
+                             <field name="section_name"/>
+                             <field name="section_description"/>
+                             <field name="priority"/>
+                             <field name="products"/>  
+                             </tree>
+                        </field>
+                    </page>
+                </notebook>
          </sheet>
         </form>
                
