@@ -2,12 +2,8 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_event_details,event.details,model_event_details,base.group_user,1,1,1,1
 access_event_themes,event.themes,model_event_themes,base.group_user,1,1,1,1
 access_event_venues,event.venues,model_event_venues,base.group_user,1,1,1,1
-access_create_events,create.events,model_create_events,base.group_user,1,1,1,1
-access_design_requirements,create.events,model_create_events,base.group_user,1,1,1,1
-access_create_events,create.events,model_create_events,base.group_user,1,1,1,1
-access_create_events,create.events,model_create_events,base.group_user,1,1,1,1
-access_create_events,create.events,model_create_events,base.group_user,1,1,1,1
-access_create_events,create.events,model_create_events,base.group_user,1,1,1,1
+
+
 
 
 

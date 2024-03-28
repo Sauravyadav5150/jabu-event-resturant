@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="create_events_form" model="ir.ui.view">
+         <field name="name">create.events.wizard</field>
+         <field name="model">create.events</field>
+         <field name="arch" type="xml">
+            <form string="Create Events">
+			
+                            <field name="state" invisible="1" />
+
+             <group invisible="state != 'client_info' ">	
+	<field name='client_name'/>
+	<field name='company'/>
+	<field name='company_address'/>
+	<field name='registration_tax_id'/>
+	<field name='email_address'/>
+	<field name='mobile'/>
+	<field name='line_whatsapp_insta_fb'/>
+	<field name='website'/>
+	</group>
+<group invisible="state != '_event_info' ">	
+	<field name='event_info_type_of_event'/>
+	<field name='event_info_event_date_s_'/>
+	<field name='event_info_destination'/>
+	<field name='event_info_event_venue_s_'/>
+	<field name='event_info_no_of_pax'/>
+	<field name='event_info_events_s_details_event_info'/>
+	<field name='event_info_themes'/>
+	</group>
+<group invisible="state != '_dmc_requirements' ">	
+	<field name='dmc_requirements_airport_transfers'/>
+	<field name='dmc_requirements_airport_rep_service'/>
+	<field name='dmc_requirements_ground_transportation'/>
+	<field name='dmc_requirements_accommodation_sourcing'/>
+	<field name='dmc_requirements_venue_sourcing'/>
+	<field name='dmc_requirements_excursions'/>
+	</group>
+<group invisible="state != '_design_requirements' ">	
+	<field name='design_requirements_artwork'/>
+	<field name='design_requirements_design'/>
+	</group>
+<group invisible="state != '_registration_requirements' ">	
+	<field name='registration_requirements_registration_counter'/>
+	<field name='registration_requirements_registration_staff'/>
+	<field name='registration_requirements_id_lanyards'/>
+	<field name='registration_requirements_t_shirts'/>
+	</group>
+<group invisible="state != '_equipment_requirements' ">	
+	<field name='equipment_requirements_light_equipment'/>
+	<field name='equipment_requirements_sound_equipment'/>
+	<field name='equipment_requirements_led_av_equipment'/>
+	<field name='equipment_requirements_tech_riders_required'/>
+	</group>
+<group invisible="state != '_photo_video_requirements' ">	
+	<field name='photo_video_requirements_photo'/>
+	<field name='photo_video_requirements_video'/>
+	<field name='photo_video_requirements_highlight_video_edit'/>
+	<field name='photo_video_requirements_ob_set_up'/>
+	</group>
+<group invisible="state != '_production_branding' ">	
+	<field name='production_branding_standees'/>
+	<field name='production_branding_registration_branding'/>
+	<field name='production_branding_backdrops'/>
+	<field name='production_branding_photowall'/>
+	<field name='production_branding_photobooth'/>
+	<field name='production_branding_stage_branding'/>
+	<field name='production_branding_printing'/>
+	<field name='production_branding_stage_rental'/>
+	<field name='production_branding_carpet'/>
+	<field name='production_branding_stairs'/>
+	<field name='production_branding_d_cor'/>
+	</group>
+	
+<group invisible="state != '_photobooth' ">	
+	<field name='photobooth_standard_photobooth_backdrop_only'/>
+	<field name='photobooth_standard_photobooth_images_print'/>
+	<field name='photobooth_360_photobooth_gifs'/>
+	<field name='photobooth_glambot_photobooth_gifs'/>
+	</group>
+<group invisible="state != '_others_misc_requirements' ">	
+	<field name='others_misc_requirements_gifts'/>
+	<field name='others_misc_requirements_furniture_rental'/>
+	<field name='others_misc_requirements_hybrid_uplink_service'/>
+	<field name='others_misc_requirements_trophy_awards'/>
+	<field name='others_misc_requirements_podium'/>
+	<field name='others_misc_requirements_translation'/>
+	</group>
+<group invisible="state != '_entertainment' ">	
+	<field name='entertainment_thai_theme'/>
+	<field name='entertainment_tech_led'/>
+	<field name='entertainment_band_musicians_dj'/>
+	<field name='entertainment_dance'/>
+	<field name='entertainment_ambient'/>
+	<field name='entertainment_cirque'/>
+	</group>
+<group invisible="state != '_activities' ">	
+	<field name='activities_team_building'/>
+	<field name='activities_cruise'/>
+	</group>
+<group invisible="state != '_manpower' ">	
+	<field name='manpower_emcee'/>
+	<field name='manpower_hostesses'/>
+	<field name='manpower_ushers'/>
+	<field name='manpower_models'/>
+	<field name='manpower_security'/>
+	<field name='manpower_event_staff'/>
+	<field name='manpower_interpreter'/>
+	<field name='manpower_labor'/>
+	<field name='manpower_delivery'/>
+	</group>
+    <footer>
+	<div name="states_buttons" invisible="state == 'final' ">
+                        <button
+                            name="convert_to_sale_order"
+                            string="Create Event"
+                            type="object"
+                            class="btn-primary"
+                        />
+						<button
+                            string="Cancel"
+                            class="btn btn-default"
+                            special="cancel"
+                        />
+						</div>
+                    <div name="states_buttons" invisible="state == 'final' ">
+                        <button
+                            name="open_next"
+                            string="Next"
+                            type="object"
+                            class="btn-primary"
+                           
+                        />
+						
+                        <button
+                            name="open_previous"
+                            string="Go Back"
+                            type="object"
+                            class="btn btn-default" 
+                        />
+                        <button
+                            string="Cancel"
+                            class="btn btn-default"
+                            special="cancel"
+                        />
+                    </div>
+                </footer>
+            </form>
+         </field>
+     </record>
+
+      <record id="create_events_wizard" model="ir.actions.act_window">
+        <field name="name">Create Events</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">create.events</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="create_events_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>
